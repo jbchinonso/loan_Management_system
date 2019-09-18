@@ -48,13 +48,16 @@
             "amount": 60000,
             "purpose": "for business improvement",
             "duration": "6 months",
+            "status": "pending",
             "customerId": "3"
+            
         },
 
         {   "id":"2",
             "amount": 90000,
             "purpose": "to enble me pay my children's school fees",
             "duration": "9 months",
+            "status": "pending",
             "customerId": "3"
         },
 
@@ -62,6 +65,7 @@
             "amount": 160000,
             "purpose": "To enable me pay my house rent",
             "duration": "3 months",
+            "status": "pending",
             "customerId": "4"
         }
     ]

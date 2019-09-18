@@ -12,7 +12,7 @@ $.ajax({
     dataType: "json",
     success: function(data){
         data.forEach(element => {
-            console.log(element);
+            
             if(element.email == email && element.password == password){
                 const person ={
                     customerId : element.id, 
@@ -20,15 +20,16 @@ $.ajax({
                     debt : element.loan
                 }
                 window.localStorage.setItem('user', JSON.stringify(person));
-                window.location.replace("profile.html")
+                window.location.replace("profile.html");
             }
+                
+            
         });
-
+        window.alert("Wrong Email or password!")
         }
     })
-   console.log(email);
+  
 })
 
 
 }
-login();
