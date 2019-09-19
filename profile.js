@@ -103,7 +103,6 @@ $.ajax({
 
 
 $transactionbox .delegate('#Approvebtn','click', function (){
-    console.log('yeah');
     var data = {
         "status": 'Approved'
     }
@@ -116,6 +115,39 @@ $transactionbox .delegate('#Approvebtn','click', function (){
         },
         error: function(){
             alert("Approval Failed")
+        }
+    })
+})
+
+
+$transactionbox .delegate('#Denybtn','click', function (){
+    var data = {
+        "status": 'Denied'
+    }
+    $.ajax({
+        type: "PATCH",
+        url : "http://localhost:3000/requests/" + $(this).attr('data-id'),
+        data: data,
+        success: function(){
+            $(this).remove();
+        },
+        error: function(){
+            alert("Denial Failed")
+        }
+    })
+})
+
+
+$transactionbox .delegate('#Deletebtn','click', function (){
+    
+    $.ajax({
+        type: "DELETE",
+        url : "http://localhost:3000/requests/" + $(this).attr('data-id'),
+        success: function(){
+            $(this).remove();
+        },
+        error: function(){
+            alert("Delete Failed")
         }
     })
 })

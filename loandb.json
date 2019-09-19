@@ -41,29 +41,23 @@
     {
       "amount": "140,000",
       "duration": "6 months",
-      "status": "Approved",
+      "status": "pending",
       "customerId": "4",
       "id": 1
     },
-    { "amount": "140,000",
+    {
+      "amount": "140,000",
       "duration": "6 months",
-      "status": "Approved",
+      "status": "pending",
       "customerId": "4",
       "id": 2
     },
-    { 
+    {
       "id": 3,
       "amount": "160,000",
       "duration": "3 months",
-      "status": "Approved",
-      "customerId": "4"
-    },
-    {
-      "id": 4,
-      "amount": "60,000",
-      "duration": "3 months",
       "status": "pending",
-      "customerId": "3"
+      "customerId": "4"
     },
     {
       "id": 5,
