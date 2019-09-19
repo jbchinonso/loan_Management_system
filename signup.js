@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
     
-    $('#signup-container').delegate('#loginbtn', 'click', function() {
+    $('#signup-container').delegate('#loginbtn', 'click', function(e) {
+        e.preventDefault();
 
     const SignupApi = "http://localhost:3000/customers";
     const customertApi = "http://localhost:3000/customers";
@@ -15,9 +16,9 @@ $(document).ready(function(){
             dataType: "json",
             success: function(data){
                 data.forEach(element => { 
-                    if(console.log(email)){
+                    if(element.email === email){
                         found = true;
-                        console.log(email);
+                        
                     }})
     
                 } 
@@ -38,7 +39,7 @@ $(document).ready(function(){
         url : SignupApi,
         data: person,
         success: function(){
-            window.location(index.html)
+           window.location.replace("index.html");
         },
         error: function(){
             alert("Error trying to make sign up")

@@ -48,6 +48,14 @@
       "password": "jonesmax",
       "loan": "0",
       "id": 6
+    },
+    {
+      "firstName": "emeka",
+      "lastName": "okonkwo",
+      "email": "nwekejohnbosco@gmail.com",
+      "password": "12345",
+      "loan": "0",
+      "id": 7
     }
   ],
   "Requests": [
