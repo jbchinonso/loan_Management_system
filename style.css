@@ -250,6 +250,16 @@ body{
     margin-top: 50px;
 
 }
+
+.req-transactions{
+    background: rgb(173, 171, 171);
+    width: 90%;
+    margin-top: 0px;
+    margin: auto;
+    overflow: scroll;
+
+}
+
 .request-form{
     height: 500px;
     width: 50%;
@@ -337,8 +347,65 @@ body{
 
 }
 
+.admin-into{
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-into h1{
+    font-size: 25px;
+    
+}
+
+.pending-req{
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.wrap{
+    width: 100%;
+    border: 1px solid rgb(33, 173, 131);;
+    height: 50px;
+}
+
+.cname{
+    width:17%;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    margin: 5px auto;
+   
+}
+
+.replybtn{
+    padding:5px;
+    color: #000;
+    background: lavender;
+    margin: -10px auto;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.content{
+    width:14%;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    margin: 5px auto;
+    
+}
+
 .footer{
     height: 150px;
+    margin: auto;
     background: linear-gradient(0,0,0,0.6) rgb(0, 0, 0);
     }
     

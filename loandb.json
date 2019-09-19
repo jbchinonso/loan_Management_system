@@ -1,72 +1,90 @@
 {
-
-    "customers":[
-        {
-            "id": "1",
-            "title": "mr",
-            "firstName":"john",
-            "lastName": "Doe",
-            "email": "johndoe@gmail.com",
-            "password": "johndoe",
-            "loan": 0
-        },
-
-        {
-            "id":"2",
-            "title": "mr",
-            "firstName":"james",
-            "lastName": "bond",
-            "email": "jamesbond@gmail.com",
-            "password": "jamesbond",
-            "loan": 0
-        },
-
-        {
-            "id": "3",
-            "title": "mrs",
-            "firstName":"jane",
-            "lastName": "mark",
-            "email": "janemark@gmail.com",
-            "password": "janemark",
-            "loan": 0
-        },
-
-        {
-            "id": "4",
-            "title": "mrs",
-            "firstName":"Rose",
-            "lastName": "philips",
-            "email": "rosephilips@gmail.com",
-            "password": "rosephilips",
-            "loan": 0
-        }
-
-    ],
-
-    "Requests":[
-        {   "id":"1",
-            "amount": 60000,
-            "purpose": "for business improvement",
-            "duration": "6 months",
-            "status": "pending",
-            "customerId": "3"
-            
-        },
-
-        {   "id":"2",
-            "amount": 90000,
-            "purpose": "to enble me pay my children's school fees",
-            "duration": "9 months",
-            "status": "pending",
-            "customerId": "3"
-        },
-
-        {   "id":"3",
-            "amount": 160000,
-            "purpose": "To enable me pay my house rent",
-            "duration": "3 months",
-            "status": "pending",
-            "customerId": "4"
-        }
-    ]
+  "customers": [
+    {
+      "id": "1",
+      "title": "mr",
+      "firstName": "john",
+      "lastName": "Doe",
+      "email": "johndoe@gmail.com",
+      "password": "johndoe",
+      "loan": 0
+    },
+    {
+      "id": "2",
+      "title": "mr",
+      "firstName": "james",
+      "lastName": "bond",
+      "email": "jamesbond@gmail.com",
+      "password": "jamesbond",
+      "loan": 0
+    },
+    {
+      "id": "3",
+      "title": "mrs",
+      "firstName": "jane",
+      "lastName": "mark",
+      "email": "janemark@gmail.com",
+      "password": "janemark",
+      "loan": 0
+    },
+    {
+      "id": "4",
+      "title": "mrs",
+      "firstName": "Rose",
+      "lastName": "philips",
+      "email": "rosephilips@gmail.com",
+      "password": "rosephilips",
+      "loan": 0
+    }
+  ],
+  "Requests": [
+    {
+      "amount": "140,000",
+      "duration": "6 months",
+      "status": "Approved",
+      "customerId": "4",
+      "id": 1
+    },
+    { "amount": "140,000",
+      "duration": "6 months",
+      "status": "Approved",
+      "customerId": "4",
+      "id": 2
+    },
+    { 
+      "id": 3,
+      "amount": "160,000",
+      "duration": "3 months",
+      "status": "Approved",
+      "customerId": "4"
+    },
+    {
+      "id": 4,
+      "amount": "60,000",
+      "duration": "3 months",
+      "status": "pending",
+      "customerId": "3"
+    },
+    {
+      "id": 5,
+      "amount": "120,000",
+      "duration": "12 months",
+      "status": "pending",
+      "customerId": "3"
+    },
+    {
+      "amount": "$150,000",
+      "duration": "9 months",
+      "status": "pending",
+      "customerId": "3",
+      "id": 6
+    },
+    {
+      "amount": "120,000",
+      "duration": "6 months",
+      "status": "pending",
+      "customerId": "1",
+      "id": 7
+    }
+  ]
 }

@@ -37,11 +37,23 @@
 <section id="transaction">
     <div class="request-form">
         <div class="request-header">REQUEST FOR A LOAN</div>
-        <form action="" class="req-form">
-            <input type="text" placeholder="First Name" class="req-input">
-            <input type="text" placeholder="Last Name" class="req-input">
-            <input type="number" placeholder="Amount" class="req-input">
-            <input type="submit" value="SEND" class="req-btn">
+        <form action="" id = "req-form" class="req-form">
+            <input id = "firstName" type="text" placeholder="First Name" class="req-input">
+            <input id = "lastName" type="text" placeholder="Last Name" class="req-input">
+            <select id = "amount" type="number" class="req-input">
+                    <option value ="60,000"> $60,000</option>
+                    <option value ="90,000"> $90,000</option>
+                    <option value ="120,000"> $120,000</option>
+                    <option value ="150,000"> $150,000</option>
+                </select>
+
+            <select id = "duration"  class="req-input">
+                <option value ="3 months"> 3 months</option>
+                <option value ="6 months"> 6 months</option>
+                <option value ="9 months"> 9 months</option>
+                <option value ="12 months"> 12 months</option>
+                </select>
+            <input id = "req-btn" type="submit" value="SEND" class="req-btn">
         </form>
     </div>
 
