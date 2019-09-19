@@ -35,6 +35,16 @@
       "email": "rosephilips@gmail.com",
       "password": "rosephilips",
       "loan": 0
+    },
+    {
+      "id": "5",
+      "title": "mr",
+      "firstName": "johnbosco",
+      "lastName": "Nweke",
+      "email": "nwekejohnbosco@gmail.com",
+      "password": "chinonso",
+      "loan": 0,
+      "admin": true
     }
   ],
   "Requests": [

@@ -11,22 +11,40 @@ $.ajax({
     url : customertApi,
     dataType: "json",
     success: function(data){
+        var found = false;
         data.forEach(element => {
             
             if(element.email == email && element.password == password){
-                const person ={
+                found = true;
+                if(element.admin){
+                    const person = {
+                    customerId : element.id, 
+                    name : element.firstName + " " + element.lastName,
+                    admin : element.admin
+                    }
+                    window.localStorage.setItem('user', JSON.stringify(person));
+                    window.location.replace("admin.html");
+                }else{
+                    const person ={
                     customerId : element.id, 
                     name : element.firstName + " " + element.lastName,
                     debt : element.loan
                 }
+
                 window.localStorage.setItem('user', JSON.stringify(person));
                 window.location.replace("profile.html");
             }
                 
-            
+            }
+               
+             
         });
-        window.alert("Wrong Email or password!")
-        }
+        
+        if(!found) alert("Wrong Email or password!")
+        },
+    
+    
+       
     })
   
 })
