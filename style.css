@@ -403,6 +403,14 @@ body{
     
 }
 
+.signNotice{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    padding:10px;
+
+}
+
 .footer{
     height: 150px;
     margin: auto;
