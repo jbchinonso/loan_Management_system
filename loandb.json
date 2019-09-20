@@ -1,0 +1,104 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "john",
+      "lastName": "Doe",
+      "email": "johndoe@gmail.com",
+      "password": "johndoe",
+      "loan": 0
+    },
+    {
+      "id": 2,
+      "firstName": "james",
+      "lastName": "bond",
+      "email": "jamesbond@gmail.com",
+      "password": "jamesbond",
+      "loan": 0
+    },
+    {
+      "id": 3,
+      "firstName": "jane",
+      "lastName": "mark",
+      "email": "janemark@gmail.com",
+      "password": "janemark",
+      "loan": 0
+    },
+    {
+      "id": 4,
+      "firstName": "Rose",
+      "lastName": "philips",
+      "email": "rosephilips@gmail.com",
+      "password": "rosephilips",
+      "loan": 0
+    },
+    {
+      "id": 5,
+      "firstName": "johnbosco",
+      "lastName": "Nweke",
+      "email": "nwekejohnbosco@gmail.com",
+      "password": "chinonso",
+      "loan": 0,
+      "admin": true
+    },
+    {
+      "firstName": "jones",
+      "lastName": "max",
+      "email": "jones@gmail.com",
+      "password": "jonesmax",
+      "loan": "0",
+      "id": 6
+    }
+  ],
+  "Requests": [
+    {
+      "amount": "140,000",
+      "duration": "6 months",
+      "status": "pending",
+      "customerId": "4",
+      "id": 1
+    },
+    {
+      "amount": "140,000",
+      "duration": "6 months",
+      "status": "pending",
+      "customerId": "4",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "amount": "160,000",
+      "duration": "3 months",
+      "status": "pending",
+      "customerId": "4"
+    },
+    {
+      "id": 5,
+      "amount": "120,000",
+      "duration": "12 months",
+      "status": "pending",
+      "customerId": "3"
+    },
+    {
+      "amount": "$150,000",
+      "duration": "9 months",
+      "status": "pending",
+      "customerId": "3",
+      "id": 6
+    },
+    {
+      "amount": "120,000",
+      "duration": "6 months",
+      "status": "pending",
+      "customerId": "1",
+      "id": 7
+    },
+    {
+      "amount": "60,000",
+      "duration": "3 months",
+      "status": "pending",
+      "customerId": "1",
+      "id": 8
+    }
+  ]
+}

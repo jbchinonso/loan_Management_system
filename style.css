@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+   
+    margin: 0 auto;
+    background: lavender;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    border-bottom: 2px solid rgb(33, 173, 131);
+    position: fixed;
+    z-index: 1;
+    
+    
+}
+.clear{
+    height: 100px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+   
+}
+.logo img{
+    margin: 10px 0;
+}
+
+.navbar{
+    float: right;
+   margin-right: 50px;
+   line-height: 100px;
+}
+.navbar ul{
+    display: inline;
+    flex-direction: row;
+    
+}
+.navbar ul li{
+    display: inline;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font: bold;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    
+   
+}
+
+#welcome-page{
+        width: 100%;
+        margin: 0 auto;
+        height: 500px;
+        background-image: url(images/loanbg.jpg);
+}
+
+#intro-header{
+    width: 300px;
+    align-self: center;
+    padding: 10px;
+    position: relative;
+    color: rgb(33, 173, 131);
+    text-transform: uppercase;
+    left: 100px;
+    height:150px;
+    
+}
+
+.intro-body{
+    align-self: center;
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    line-height: 30px;
+    position: relative;
+    left: 100px;
+}
+
+#intro-header h2{
+    font-size: 50px;
+    line-height: 1.3;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading{
+    0%{ top: 0px;}
+    100%{top: 100px;}
+}
+
+#content{
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes content{
+    0% { left: -500px;}
+    100%{left: 100px;}
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border: 1px #fff solid;
+    margin-top: 20px;
+    background: rgb(33, 173, 131);
+    border-radius: 5px;
+    opacity: 0;
+    animation: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes btn{
+    0% { opacity: 0}
+    100%{opacity: 1;}
+}
+
+#steps{
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    background: linear-gradient(0,0,0,0.6) rgb(0, 0, 0);
+}
+
+.steps-header{
+    position: relative;
+    margin: auto;
+    text-align: center;
+   padding: 15px;
+   background: #fff;
+}
+
+.steps-header h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+}
+
+.loan-img{
+    width: 650px;
+    height: 270px;
+    background-image: url(images/loan-img.jpg);
+    float: left;
+}
+
+.loan-steps{
+    width: 500px;
+    height: 270px;
+    float: right;
+    margin-right:2px; 
+    padding-left: 10px;
+    
+}
+
+.loan-steps ol{
+    display:block;
+    flex-direction: column;
+}
+
+.loan-steps ol li{
+    line-height: 1;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    color:rgb(10, 10, 10);
+    margin: 20px;
+    text-decoration: wavy;
+}
+
+
+#profile-container{
+    width: 100%;
+    margin: 0 auto;
+    height: 700px;
+    border: 2px solid #000;
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.6), rgb(0, 0, 0.6)), url(images/profile-bg.jpg);
+    background-size: cover;
+    
+}
+
+#dashboard-header{
+    background: linear-gradient(0deg,rgba(0,0,0,0.6), rgb(0, 0, 0.6));
+}
+.profileimg {
+    width: 300px;
+    height: 200px;
+    align-self: center;
+    border-radius: 50%;
+    border: 1px solid rgb(33, 173, 131);
+    margin: auto;
+}
+
+.profileimg img{
+    width: 300px;
+    height: 200px;
+    align-self: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.customer-name{
+    align-self: center;
+    text-align: center;
+    border: 1px solid black;
+    font: bolder;
+    font-weight: 500;
+    color:white;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+#transaction{
+    height: 500px;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+.req-transactions{
+    background: rgb(173, 171, 171);
+    width: 90%;
+    margin-top: 0px;
+    margin: auto;
+    overflow: scroll;
+
+}
+
+.request-form{
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+
+.loans-requested{
+    height: scroll;
+    width: 50%;
+    float: right;
+}
+
+.req-form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    padding: 10px;
+}
+
+.request-header{
+    text-align: center;
+    width: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    border-left: 10px solid rgb(33, 173, 131);
+    
+}
+
+.requested-title{
+    text-align: center;
+    width: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    border-left: 10px solid rgb(33, 173, 131);
+}
+
+.req-input{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    text-justify: auto;
+}
+
+.req-btn{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    text-justify: auto;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    background: rgb(33, 173, 131);
+}
+
+.headers{
+    text-align: center;
+    width: 601px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: auto;
+    background: #fff;
+    border-left: 10px solid rgb(33, 173, 131);
+    
+}
+
+
+.header{
+    width:29%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.request-container{
+    width:100%;
+    background: white;
+    height: 200px;
+
+}
+
+.admin-into{
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-into h1{
+    font-size: 25px;
+    
+}
+
+.pending-req{
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.wrap{
+    width: 100%;
+    border: 1px solid rgb(33, 173, 131);;
+    height: 50px;
+}
+
+.cname{
+    width:17%;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    margin: 5px auto;
+   
+}
+
+.replybtn{
+    padding:5px;
+    color: #000;
+    background: lavender;
+    margin: -10px auto;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.content{
+    width:14%;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    margin: 5px auto;
+    
+}
+
+.signNotice{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    padding:10px;
+
+}
+
+.footer{
+    height: 150px;
+    margin: auto;
+    background: linear-gradient(0,0,0,0.6) rgb(0, 0, 0);
+    }
+    
+    .footer-text{
+        margin-top: 80px;
+        float: right;
+        margin-right: 5px;
+    }
+
+
+
