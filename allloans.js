@@ -22,8 +22,6 @@ $.ajax({
             <div class = 'content'>${element.amount}</div>
             <div class = 'content'>${element.duration}</div>
             <div class = 'content'>${element.status}</div>
-            <div class = 'content'><button data-id = ${element.id} id = 'Denybtn' class = "replybtn"> Deny </button></div>
-            <div class = 'content'><button data-id = ${element.id} id = 'Deletebtn' class = "replybtn">Delete </button></div>
             
             </div> <br />`)
 
