@@ -41,7 +41,7 @@ if(firstName === "" || lastName === "" || email === "" || password === "")
                         url : "http://localhost:3000/customers",
                         data: person,
                         success: function(){
-                           window.location.replace("index.html");
+                            alert("You have successfully signed up, please login")
                         },
                         error: function(){
                             alert("Error trying to make sign up")
