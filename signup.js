@@ -4,56 +4,64 @@ $(document).ready(function(){
     $('#signup-container').delegate('#loginbtn', 'click', function(e) {
         e.preventDefault();
 
-    const SignupApi = "http://localhost:3000/customers";
-    const customertApi = "http://localhost:3000/customers";
-
+    let firstName = (document.getElementById("firstName").value).trim();
+    let lastName = (document.getElementById("lastName").value).trim();
     let email = (document.getElementById("email").value).trim();
-        var found = false
-        console.log(email);
+    let password = (document.getElementById("password").value).trim();
+
+if(firstName === "" || lastName === "" || email === "" || password === "")
+{ alert("Please Fill all the fields")}else{
+ 
+
         $.ajax({
             type : "GET",
-            url : customertApi,
+            url : "http://localhost:3000/customers",
             dataType: "json",
             success: function(data){
+                var found = false
                 data.forEach(element => { 
+                    
                     if(element.email === email){
                         found = true;
+                    }
+                    })
+
+                    if(!found){
+                        var person = {
+                            "firstName": $('#firstName').val(),
+                            "lastName": $('#lastName').val(),
+                            "email": $('#email').val(),
+                            "password": $('#password').val(),
+                            "loan": 0
+                        }
+                    
                         
-                    }})
+                    $.ajax({
+                        type: "POST",
+                        url : "http://localhost:3000/customers",
+                        data: person,
+                        success: function(){
+                           window.location.replace("index.html");
+                        },
+                        error: function(){
+                            alert("Error trying to make sign up")
+                        }
+                    
+                    })
+                        
+                    }
+
+                    else {
+                        alert("This User Already Exist in Our Record")
+                    }
+                
     
                 } 
-            })
+            }) 
     
-    if(!found){
-        var person = {
-            "firstName": $('#firstName').val(),
-            "lastName": $('#lastName').val(),
-            "email": $('#email').val(),
-            "password": $('#password').val(),
-            "loan": 0
-        }
     
-        
-    $.ajax({
-        type: "POST",
-        url : SignupApi,
-        data: person,
-        success: function(){
-           window.location.replace("index.html");
-        },
-        error: function(){
-            alert("Error trying to make sign up")
-        }
-    
+}
     })
-                   
-    }else{
-        alert("This User Already Exist in Our Record")
-    }
-    
-    
-    
-    
-    
-    })
+
+
     })
