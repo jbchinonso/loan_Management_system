@@ -1,9 +1,14 @@
 const customertApi = "http://localhost:3000/customers";
 
 //Login Funationality
-const login = () =>{
 
 $(document).ready(function(){
+const myForm = document.querySelector('.modal-content') 
+
+myForm.addEventListener('submit', (e) =>{
+
+    e.preventDefault();
+
 let email = (document.getElementById("email").value).trim();
 let password = (document.getElementById("password").value).trim();
 $.ajax({
@@ -50,6 +55,6 @@ $.ajax({
 })
 
 
-}
+})
 
 
