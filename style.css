@@ -244,6 +244,17 @@ body{
     
 }
 
+.loan-balance{
+    align-self: center;
+    text-align: center;
+    font: bolder;
+    font-weight: 500;
+    color:white;
+    margin: auto;
+    padding: 10px;
+    
+}
+
 #transaction{
     height: 500px;
     padding: 20px;
@@ -411,15 +422,58 @@ body{
 
 }
 
+.package{
+    display: inline-block;
+    color: #fff;
+    margin-top: 30px;
+    background: rgb(33, 173, 131);
+    border-radius: 5px;
+    width: 33%;
+    opacity: 0;
+    cursor: pointer;
+    animation: package;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.package:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes package{
+    0% { opacity: 0}
+    100%{opacity: 1;}
+}
+
+.package-amt {
+padding: 15px;
+align-content: center;
+text-align: center;
+font-size: 35px;
+font-weight: 600;
+}
+
+.package-detail{
+padding: 15px;
+line-height: 30px;
+font-size: 18px;
+text-align: center;
+
+}
+
 .footer{
+    margin-top: 30px;
     height: 150px;
-    margin: auto;
-    background: linear-gradient(0,0,0,0.6) rgb(0, 0, 0);
+    background:rgba(47, 71, 56, 0.568);
     }
     
     .footer-text{
         margin-top: 80px;
         float: right;
+        padding: 15px;
         margin-right: 5px;
     }
 

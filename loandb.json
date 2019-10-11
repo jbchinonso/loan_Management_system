@@ -46,7 +46,7 @@
       "lastName": "max",
       "email": "jones@gmail.com",
       "password": "jonesmax",
-      "loan": "0",
+      "loan": 0,
       "id": 6
     },
     {
@@ -54,7 +54,7 @@
       "lastName": "chinonso",
       "email": "jude@gmail.com",
       "password": "1234",
-      "loan": "0",
+      "loan": 0,
       "id": 7
     },
     {
@@ -62,7 +62,7 @@
       "lastName": "doe",
       "email": "mary@gmail.com",
       "password": "mary",
-      "loan": "0",
+      "loan": 0,
       "id": 8
     },
     {
@@ -76,46 +76,11 @@
   ],
   "Requests": [
     {
-      "amount": "140,000",
-      "duration": "6 months",
-      "status": "pending",
-      "customerId": "4",
-      "id": 1
-    },
-    {
-      "amount": "140,000",
-      "duration": "6 months",
-      "status": "pending",
-      "customerId": "4",
-      "id": 2
-    },
-    {
-      "id": 3,
-      "amount": "160,000",
-      "duration": "3 months",
-      "status": "pending",
-      "customerId": "4"
-    },
-    {
-      "id": 5,
       "amount": "120,000",
-      "duration": "12 months",
-      "status": "Denied",
-      "customerId": "3"
-    },
-    {
-      "amount": "60,000",
-      "duration": "3 months",
-      "status": "Denied",
+      "duration": "6 months",
+      "status": "pending",
       "customerId": "1",
-      "id": 8
-    },
-    {
-      "amount": "120,000",
-      "duration": "9 months",
-      "status": "Approved",
-      "customerId": "8",
-      "id": 9
+      "id": 1
     }
   ]
 }

@@ -5,6 +5,11 @@
     color: #fefefe;
     background: rgb(33, 173, 131);
 }
+
+#logoutbtn, #dashboard{
+  display: none;
+  
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

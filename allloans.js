@@ -1,3 +1,8 @@
+let user = JSON.parse(window.localStorage.getItem('user'))
+    if(!user){
+        window.location.replace('index.html');
+    }
+
 const logout = () =>{
     window.localStorage.removeItem('user')
     window.location.replace('index.html');
