@@ -5,6 +5,11 @@
     color: #fefefe;
     background: rgb(33, 173, 131);
 }
+
+#logoutbtn, #dashboard{
+  display: none;
+  
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -59,7 +64,7 @@
     flex-direction: column;
     margin: 25px;
     padding: 10px;
-    text-justify: auto;
+    align-items: center;
     color:#fefefe;
     background: rgb(33, 173, 131);
 }
@@ -81,6 +86,7 @@
     color: red;
     cursor: pointer;
   }
+
   
   /* Add Zoom Animation */
   .animate {

@@ -12,7 +12,8 @@ const ApI ="http://localhost:3000/customers/"+ `${user.customerId}` + "/requests
 $(document).ready(function(){
 
 document.querySelector(".customer-name").textContent = user.name;
-let container = document.querySelector(".request-container")
+document.querySelector(".loan-balance").textContent = "Loan Balance :" + user.debt;
+let container = document.querySelector(".request-container");
   
 
 $.ajax({

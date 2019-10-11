@@ -1,8 +1,8 @@
 $(document).ready(function(){
+const myform = document.querySelector('.modal-content');
+myform.addEventListener('submit',(e)=>{
+    e.preventDefault();
 
-    
-    $('#signup-container').delegate('#loginbtn', 'click', function(e) {
-        e.preventDefault();
 
     let firstName = (document.getElementById("firstName").value).trim();
     let lastName = (document.getElementById("lastName").value).trim();
@@ -39,10 +39,10 @@ if(firstName === "" || lastName === "" || email === "" || password === "")
                     $.ajax({
                         type: "POST",
                         url : "http://localhost:3000/customers",
-                        data: person,
-                        success: function(){
-                            alert("You have successfully signed up, please login")
-                        },
+                        data: JSON.stringify(person),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success:  window.location.href = "index.html?msg=You have successfully signed up please Login",
                         error: function(){
                             alert("Error trying to make sign up")
                         }
@@ -53,6 +53,7 @@ if(firstName === "" || lastName === "" || email === "" || password === "")
 
                     else {
                         alert("This User Already Exist in Our Record")
+                        
                     }
                 
     
