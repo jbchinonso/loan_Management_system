@@ -1,2 +1,2 @@
 # loan_Management_system
-This is my decagon project built with javascript
+This is my loan Management Application project built with javascript and Jquery
